@@ -25,6 +25,7 @@
 	],
 	"groups": {
 		"group:hilltop": [
+			"cheska-tailscale@passkey",
 			"lucas@cantor.cloud",
 		],
 	},
