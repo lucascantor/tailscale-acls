@@ -24,10 +24,6 @@
 		},
 	],
 	"groups": {
-		"group:hilltop": [
-			"cheska-tailscale@passkey",
-			"lucas@cantor.cloud",
-		],
 		"group:flatland": [
 			"cheska-tailscale@passkey",
 			"lucas@cantor.cloud",
@@ -35,7 +31,6 @@
 	},
 	"tagOwners": {
 		"tag:exit-node-member":  [],
-		"tag:exit-node-hilltop": [],
 		"tag:exit-node-flatland": [],
 	},
 	"grants": [
@@ -48,12 +43,6 @@
 			"src": ["autogroup:member"],
 			"dst": ["autogroup:internet"],
 			"via": ["tag:exit-node-member"],
-			"ip":  ["*"],
-		},
-		{
-			"src": ["group:hilltop"],
-			"dst": ["autogroup:internet"],
-			"via": ["tag:exit-node-hilltop"],
 			"ip":  ["*"],
 		},
 		{
