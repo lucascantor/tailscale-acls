@@ -1,38 +1,21 @@
 // This tailnet's ACLs are maintained in https://github.com/lucascantor/tailscale-acls
 {
-	"acls": [
-		{
-			"action": "accept",
-			"src":    ["autogroup:owner"],
-			"dst":    ["*:*"],
-		},
-		{
-			"action": "accept",
-			"src":    ["autogroup:member"],
-			"dst":    ["autogroup:self:*"],
-		},
-	],
 	"ssh": [
 		{
 			"action": "check",
 			"src":    ["autogroup:member"],
 			"dst":    ["autogroup:self"],
-			"users": [
-				"autogroup:nonroot",
-				"root",
-			],
+			"users":  ["autogroup:nonroot", "root"],
 		},
 	],
-	"groups": {
-		"group:flatland": [
-			"cheska-tailscale@passkey",
-			"lucas@cantor.cloud",
-		],
-	},
+
+	"groups": {"group:flatland": ["cheska-tailscale@passkey", "lucas@cantor.cloud"]},
+
 	"tagOwners": {
-		"tag:exit-node-member":  [],
+		"tag:exit-node-member":   [],
 		"tag:exit-node-flatland": [],
 	},
+
 	"grants": [
 		{
 			"src": ["autogroup:owner"],
@@ -49,6 +32,16 @@
 			"src": ["group:flatland"],
 			"dst": ["autogroup:internet"],
 			"via": ["tag:exit-node-flatland"],
+			"ip":  ["*"],
+		},
+		{
+			"src": ["autogroup:owner"],
+			"dst": ["*"],
+			"ip":  ["*"],
+		},
+		{
+			"src": ["autogroup:member"],
+			"dst": ["autogroup:self"],
 			"ip":  ["*"],
 		},
 	],
