@@ -9,12 +9,17 @@
 		},
 	],
 
-	"groups": {"group:flatland": ["cheska-tailscale@passkey", "lucas@cantor.cloud"]},
+	"groups": {
+		"group:flatland":              ["cheska-tailscale@passkey", "lucas@cantor.cloud"],
+		"group:tag-manager-ephemeral": ["unitizer-tailscale@passkey"],
+		"group:tag-manager-mdm":       ["unitizer-tailscale@passkey"],
+	},
 
 	"tagOwners": {
 		"tag:exit-node-member":   [],
 		"tag:exit-node-flatland": [],
-		"tag:ephemeral": ["unitizer-tailscale@passkey"],
+		"tag:ephemeral":          ["group:tag-manager-ephemeral"],
+		"tag:mdm":                ["group:tag-manager-mdm"],
 	},
 
 	"grants": [
