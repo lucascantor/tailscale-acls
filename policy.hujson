@@ -14,7 +14,7 @@
 	"tagOwners": {
 		"tag:exit-node-member":   [],
 		"tag:exit-node-flatland": [],
-		"tag:ephemeral": [],
+		"tag:ephemeral": ["unitizer-tailscale@passkey"],
 	},
 
 	"grants": [
