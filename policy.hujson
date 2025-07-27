@@ -1,4 +1,4 @@
-// This tailnet's ACLs are maintained in https://github.com/lucascantor/tailscale-acls
+// This tailnet's policies are maintained in https://github.com/lucascantor/tailscale-acls
 {
 	"ssh": [
 		{
