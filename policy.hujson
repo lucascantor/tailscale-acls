@@ -10,12 +10,13 @@
 	],
 
 	"groups": {
-		"group:flatland":              ["cheska-tailscale@passkey", "lucas@cantor.cloud"],
+		"group:flatland":              ["cheska-tailscale@passkey", "lucas@cantor.cloud", "tag:cheska", "tag:lucas"],
 		"group:tag-manager-ephemeral": ["unitizer-tailscale@passkey"],
 		"group:tag-manager-mdm":       ["unitizer-tailscale@passkey"],
 	},
 
 	"tagOwners": {
+		"tag:cheska":             [],
 		"tag:ephemeral":          ["group:tag-manager-ephemeral"],
 		"tag:exit-node-member":   [],
 		"tag:exit-node-flatland": [],
@@ -58,13 +59,19 @@
 		{
 			"target": ["tag:lucas"],
 			"attr": [
-				"nextdns:af41e4?priority=1",
+				"nextdns:af41e4?priority=3",
+			],
+		},
+		{
+			"target": ["tag:cheska"],
+			"attr": [
+				"nextdns:ff5a88?priority=2",
 			],
 		},
 		{
 			"target": ["tag:family"],
 			"attr": [
-				"nextdns:ff5a88?priority=2",
+				"nextdns:ff5a88?priority=1",
 			],
 		},
 	],
