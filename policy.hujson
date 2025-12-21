@@ -16,9 +16,11 @@
 	},
 
 	"tagOwners": {
+		"tag:ephemeral":          ["group:tag-manager-ephemeral"],
 		"tag:exit-node-member":   [],
 		"tag:exit-node-flatland": [],
-		"tag:ephemeral":          ["group:tag-manager-ephemeral"],
+		"tag:family":             [],
+		"tag:lucas":              [],
 		"tag:mdm":                ["group:tag-manager-mdm"],
 	},
 
@@ -49,6 +51,19 @@
 			"src": ["autogroup:member"],
 			"dst": ["autogroup:self"],
 			"ip":  ["*"],
+		},
+	],
+	
+	"nodeAttrs": [
+		{
+			"target": ["tag:lucas"],
+			"attr": [
+				"nextdns:af41e4",
+			],
+			"target": ["tag:family"],
+			"attr": [
+				"nextdns:ff5a88",
+			],
 		},
 	],
 }
