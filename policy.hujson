@@ -60,6 +60,8 @@
 			"attr": [
 				"nextdns:af41e4",
 			],
+		},
+		{
 			"target": ["tag:family"],
 			"attr": [
 				"nextdns:ff5a88",
