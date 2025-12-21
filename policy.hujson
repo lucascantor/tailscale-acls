@@ -58,13 +58,13 @@
 		{
 			"target": ["tag:lucas"],
 			"attr": [
-				"nextdns:af41e4",
+				"nextdns:af41e4?priority=1",
 			],
 		},
 		{
 			"target": ["tag:family"],
 			"attr": [
-				"nextdns:ff5a88",
+				"nextdns:ff5a88?priority=2",
 			],
 		},
 	],
