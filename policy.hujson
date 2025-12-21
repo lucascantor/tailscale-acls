@@ -10,7 +10,7 @@
 	],
 
 	"groups": {
-		"group:flatland":              ["cheska-tailscale@passkey", "lucas@cantor.cloud", "tag:cheska", "tag:lucas"],
+		"group:flatland":              ["cheska-tailscale@passkey", "lucas@cantor.cloud"],
 		"group:tag-manager-ephemeral": ["unitizer-tailscale@passkey"],
 		"group:tag-manager-mdm":       ["unitizer-tailscale@passkey"],
 	},
@@ -27,29 +27,29 @@
 
 	"grants": [
 		{
-			"src": ["autogroup:owner"],
+			"src": ["autogroup:owner", "tag:lucas"],
 			"dst": ["autogroup:internet"],
 			"ip":  ["*"],
 		},
 		{
-			"src": ["autogroup:member"],
+			"src": ["autogroup:member", "tag:cheska", "tag:family", "tag:lucas"],
 			"dst": ["autogroup:internet"],
 			"via": ["tag:exit-node-member"],
 			"ip":  ["*"],
 		},
 		{
-			"src": ["group:flatland"],
+			"src": ["group:flatland", "tag:cheska", "tag:lucas"],
 			"dst": ["autogroup:internet"],
 			"via": ["tag:exit-node-flatland"],
 			"ip":  ["*"],
 		},
 		{
-			"src": ["autogroup:owner"],
+			"src": ["autogroup:owner", "tag:lucas"],
 			"dst": ["*"],
 			"ip":  ["*"],
 		},
 		{
-			"src": ["autogroup:member"],
+			"src": ["autogroup:member", "tag:cheska", "tag:family", "tag:lucas"],
 			"dst": ["autogroup:self"],
 			"ip":  ["*"],
 		},
