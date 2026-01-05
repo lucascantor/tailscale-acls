@@ -11,8 +11,8 @@
 
 	"groups": {
 		"group:flatland":              ["cheska-tailscale@passkey", "lucas@cantor.cloud"],
-		"group:tag-manager-ephemeral": ["unitizer-tailscale@passkey"],
-		"group:tag-manager-mdm":       ["unitizer-tailscale@passkey"],
+		"group:tag-manager-ephemeral": ["lucas@cantor.cloud"],
+		"group:tag-manager-mdm":       ["lucas@cantor.cloud"],
 	},
 
 	"tagOwners": {
