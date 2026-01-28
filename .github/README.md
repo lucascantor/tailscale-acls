@@ -1,3 +1,3 @@
 # tailscale-acls
 
-Manage Tailscale policy via GitOps per https://tailscale.com/kb/1306/gitops-acls-github
+[Moved to Codeberg](https://codeberg.org/lucascantor/tailscale-acls)
